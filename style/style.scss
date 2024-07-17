@@ -59,7 +59,7 @@ body {
             }
 
             p {
-                width: 511px;
+                max-width: 511px;
 
                 color: rgb(114, 114, 114);
                 font: 400 17px Manrope;
@@ -84,8 +84,8 @@ body {
                     background-image: url(../assets/arrow.svg);
                     background-repeat: no-repeat;
                     background-size: contain;
-                    width: 36px;
-                    height: 36px;
+                    width: 44px;
+                    height: 44px;
                 }
 
                 &:hover {
@@ -106,9 +106,135 @@ body {
             display: flex;
             justify-content: center;
 
-            img {
+            .img__1920 {
                 max-width: 100%;
                 height: auto;
+            }
+
+            .img__1440 {
+                display: none;
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1440px) {
+    .main {
+        padding: 36px 40px;
+
+        .content {
+            .content__text {
+                h1 {
+                    color: rgb(31, 66, 132);
+                    font: 500 26px Manrope;
+                }
+            }
+
+            .content__img {
+                .img__1920 {
+                    display: none;
+                }
+
+                .img__1440 {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .main {
+        padding: 24px;
+        height: 100vh;
+
+        .content {
+            display: block;
+
+            .content__text {
+                max-width: 100%;
+                padding: 24px;
+
+                h1 {
+                    font: 500 20px Manrope;
+                }
+
+                p {
+                    max-width: 100%;
+                    font: 400 15px Manrope;
+                }
+
+                .btn {
+                    font: 500 15px Manrope;
+
+                    padding: 10px 10px 10px 18px;
+
+                    .arrow {
+                        width: 36px;
+                        height: 36px;
+                    }
+                }
+            }
+
+            .content__img {
+                .img__1920 {
+                    display: block;
+                }
+
+                .img__1440 {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .main {
+        padding: 14px 24px;
+        height: 100vh;
+
+        .content {
+            .content__text {
+                max-width: 100%;
+                padding: 24px 24px 0px 24px;
+
+                h1 {
+                    font: 500 17px Manrope;
+                }
+
+                p {
+                    max-width: 100%;
+                    font: 400 13px Manrope;
+                }
+
+                .btn {
+                    max-width: 100%;
+                    padding: 10px 10px 10px 18px;
+
+                    color: rgb(255, 255, 255);
+                    font: 500 15px Manrope;
+
+                    gap: 32px;
+
+                    .arrow {
+                        width: 32px;
+                        height: 32px;
+                    }
+                }
+            }
+
+            .content__img {
+                .img__1920 {
+                    display: none;
+                }
+
+                .img__1440 {
+                    display: block;
+                }
             }
         }
     }
