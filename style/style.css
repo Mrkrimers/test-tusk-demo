@@ -1,0 +1,127 @@
+@font-face {
+  font-family: "Manrope";
+  src: url(../font/Manrope-Regular.ttf) format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url(../font/Manrope-Medium.ttf) format("truetype");
+  font-weight: 500;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.main {
+  width: 100vw;
+  padding: 36px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.main .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 10px;
+  background: rgb(235, 240, 250);
+  overflow: hidden;
+}
+.main .content .content__text {
+  max-width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 18px;
+  padding: 72px;
+}
+.main .content .content__text h1 {
+  color: rgb(31, 66, 132);
+  font: 500 30px Manrope;
+}
+.main .content .content__text p {
+  width: 511px;
+  color: rgb(114, 114, 114);
+  font: 400 17px Manrope;
+}
+.main .content .content__text .btn {
+  max-width: 341px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 40px;
+  color: rgb(255, 255, 255);
+  font: 500 18px Manrope;
+  border-radius: 60px;
+  background: rgb(36, 76, 152);
+  padding: 12px 12px 12px 24px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.main .content .content__text .btn .arrow {
+  background-image: url(../assets/arrow.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 36px;
+  height: 36px;
+}
+.main .content .content__text .btn:hover {
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-shadow: 2px 2px 10px 0px rgb(112, 116, 112);
+          box-shadow: 2px 2px 10px 0px rgb(112, 116, 112);
+}
+.main .content .content__text .btn:active {
+  background-color: #000000;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+.main .content .content__img {
+  max-width: 910px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.main .content .content__img img {
+  max-width: 100%;
+  height: auto;
+}
