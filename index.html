@@ -19,7 +19,7 @@
                 <p>За 18 лет деятельности было реализовано более 500 крупных, а так же, не менее 2500 средних и малых
                     проектов. Используя знания и накопленный опыт мы можем предложить </p>
 
-                <div class="btn" role="button">
+                <div class="btn__open" role="button">
                     Попробовать бесплатно
                     <div class="arrow"></div>
                 </div>
@@ -34,7 +34,41 @@
         </div>
     </main>
 
+    <section class="popup-bg">
+        <form class="popup" action="#" id="form">
+
+            <div class="btn__close__wrapper">
+                <button class="btn__close">&#10006;</button>
+            </div>
+
+            <div class="title">
+                <h1>Войти в систему</h1>
+            </div>
+
+            <div class="inputs__wrapper">
+                <input class="_req" type="text" placeholder="Email/Телефон">
+                <input class="_req" type="password" placeholder="Пароль">
+            </div>
+
+            <div class="remember">
+                <input type="checkbox" id="remember">
+                <label class="checkbox__label" for="remember">Запомнить пароль</label>
+            </div>
+
+            <div class="restore">
+                <a class="link__restore" href="#">Восстановить</a>
+            </div>
+
+            <div class="buttons__connect">
+                <button class="btn__enter">Войти</button>
+                <button class="btn__register">Зарегистрироваться</button>
+            </div>
+
+        </form>
+    </section>
+
     <script src="./js/app.js"></script>
+    <script src="./js/form.js"></script>
 </body>
 
 </html>
